@@ -24,6 +24,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
 */
+#ifndef INFLUX_DATA_H
+#define INFLUX_DATA_H
 #include "InfluxDbClient.h"
 
 class InfluxData : public Point {
@@ -35,3 +37,4 @@ class InfluxData : public Point {
   void setTimestamp(long int seconds);
   String toString() const;
 };
+#endif //INFLUX_DATA_H
